@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useContext} from "react";
+import { AppContext } from "../appContext";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import HomeScreen from "./HomeScreen";
@@ -9,11 +10,15 @@ import Stats from "./Stats";
 const Tab = createBottomTabNavigator();
 
 export default function Home(){
+    const {theme} = useContext(AppContext);
     return (
         <Tab.Navigator
             screenOptions={{
-                activeTintColor: '#f53412',
-                inactiveTintColor: 'blue'
+                activeTintColor: theme === 'light' ? '#f53412': '#fff',
+                inactiveTintColor: theme === 'light' ? 'blue': '#aaa',
+                tabBarStyle: {
+                    backgroundColor: theme === 'light' ? '#fff': '#222'
+                }
             }}>
                 <Tab.Screen
                     name='Home'

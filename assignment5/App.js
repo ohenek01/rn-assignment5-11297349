@@ -1,19 +1,19 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Home from './components/Home';
+import SettingScreen from './components/SettingScreen';
+import { AppProvider } from './appContext';
 
-const Stack = createStackNavigator();
 
 export default function App() {
   return (
+    <AppProvider>
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name='HomeTab' component={Home}
-          options={{headerShown: false}}/>
-      </Stack.Navigator>
+      <Home/>
     </NavigationContainer>
+    </AppProvider>
   );
 }
 
