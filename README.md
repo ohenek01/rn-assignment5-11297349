@@ -65,3 +65,14 @@ The key components of the implementation are:
 6. **HomeScreen.js**: This file displays transactions made with the users card
 
 By following this README, you should be able to set up and run the React Native theme switcher application on your local development environment.
+
+### Screenshots
+![photo_2024-06-25_18-30-26](https://github.com/ohenek01/rn-assignment5-11297349/assets/144062701/50ed1169-1b88-4676-a46c-1df4b6d62284)
+
+![photo_2024-06-25_18-30-51](https://github.com/ohenek01/rn-assignment5-11297349/assets/144062701/495aba59-f169-4057-9524-3d1347146777)
+
+![photo_2024-06-25_18-30-59](https://github.com/ohenek01/rn-assignment5-11297349/assets/144062701/de19e944-3291-4648-9454-29a80c2870fb)
+
+![photo_2024-06-25_18-31-05](https://github.com/ohenek01/rn-assignment5-11297349/assets/144062701/70006523-b38a-4fcc-9f57-9e8effd361c9)
+
+
